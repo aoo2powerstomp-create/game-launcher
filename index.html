@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Google Analytics 4 (GA4) 
+         [設定手順]
+         1. 「G-XXXXXXXXXX」を Google Analytics コンソールで取得した測定IDに置き換えてください。
+         2. スニペットを丸ごと削除すれば、解析を完全に無効化できます。
+    -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Launcher</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Game Launcher</h1>
+        </header>
+
+        <main id="game-grid" class="game-grid">
+            <!-- ENERGY CORE -->
+            <article class="card" data-updated="2024-02-14"
+                data-thumbs="assets/thumb/title_energy_core.webp,assets/thumb/play_energy_core.webp">
+                <div class="card-thumb-container">
+                    <img src="assets/thumb/title_energy_core.webp" alt="ENERGY CORE" class="card-thumb">
+                    <div class="carousel-controls">
+                        <button class="prev" aria-label="Previous image">&lt;</button>
+                        <button class="next" aria-label="Next image">&gt;</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-platforms">
+                        <span>💻 PC</span>
+                        <span>📱 Mobile</span>
+                    </div>
+                    <h2 class="card-title">ENERGY CORE</h2>
+                    <p class="card-desc">出現するENERGYを素早くタップしてハイスコアを目指すミニゲーム</p>
+                    <div class="card-meta">
+                        <span class="version">v1.1.0</span>
+                        <span class="status public">公開中</span>
+                    </div>
+                    <p class="updated-label">最終更新: 2024-02-14</p>
+                    <div class="card-footer">
+                        <a href="https://aoo2powerstomp-create.github.io/balloon-bomb/" target="_blank"
+                            rel="noopener noreferrer" class="play-btn"
+                            onclick="gtag('event', 'game_click', { 'game_title': 'ENERGY CORE' });">PLAY</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 零距離防衛 -->
+            <article class="card" data-updated="2024-02-10"
+                data-thumbs="assets/thumb/title_零距離防衛_core.webp,assets/thumb/play_零距離防衛_01.webp,assets/thumb/play_零距離防衛_02.webp">
+                <div class="card-thumb-container">
+                    <img src="assets/thumb/title_零距離防衛_core.webp" alt="零距離防衛" class="card-thumb">
+                    <div class="carousel-controls">
+                        <button class="prev" aria-label="Previous image">&lt;</button>
+                        <button class="next" aria-label="Next image">&gt;</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-platforms">
+                        <span>💻 PC</span>
+                        <span>📱 Mobile</span>
+                    </div>
+                    <h2 class="card-title">零距離防衛</h2>
+                    <p class="card-desc">現在開発中(あとBGMとSE)のTOPビュー弾幕系シューティング</p>
+                    <div class="card-meta">
+                        <span class="version">v0.5.0</span>
+                        <span class="status dev">開発中</span>
+                    </div>
+                    <p class="updated-label">最終更新: 2024-02-14</p>
+                    <div class="card-footer">
+                        <a href="https://aoo2powerstomp-create.github.io/zero-distance-defense/" target="_blank"
+                            rel="noopener noreferrer" class="play-btn"
+                            onclick="gtag('event', 'game_click', { 'game_title': '零距離防衛' });">PLAY</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Ash and Anvil -->
+            <article class="card" data-updated="2024-01-20"
+                data-thumbs="assets/thumb/title_ash and anvil.webp,assets/thumb/play_ash and anvil.webp">
+                <div class="card-thumb-container">
+                    <img src="assets/thumb/title_ash and anvil.webp" alt="Ash and Anvil" class="card-thumb">
+                    <div class="carousel-controls">
+                        <button class="prev" aria-label="Previous image">&lt;</button>
+                        <button class="next" aria-label="Next image">&gt;</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-platforms">
+                        <span>💻 PC</span>
+                        <span>📱 Mobile</span>
+                    </div>
+                    <h2 class="card-title">Ash & Anvil</h2>
+                    <p class="card-desc">重厚感のあるファンタジーアクション。採掘と鍛冶を繰り返して強くなれ。</p>
+                    <div class="card-meta">
+                        <span class="version">v0.0.1</span>
+                        <span class="status dev">開発中</span>
+                    </div>
+                    <p class="updated-label">最終更新: 2024-01-20</p>
+                    <div class="card-footer">
+                        <span class="play-btn disabled"
+                            onclick="gtag('event', 'game_click', { 'game_title': 'Ash and Anvil' });">工事中</span>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 toxic out brain</p>
+        </footer>
+    </div>
+
+    <script src="./assets/app.js"></script>
+</body>
+
+</html>
